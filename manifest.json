@@ -1,9 +1,9 @@
 {
   "name": "Add JIRA Links to Desk",
-  "version": "0.0.1",
+  "version": "0.1",
   "manifest_version": 2,
-  "description": "Hi, you",
-  "homepage_url": "http://bacon.com",
+  "description": "Creates a link to PDT/CCE issues next to those fields in Desk",
+  "homepage_url": "http://sanger.dk/",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -15,12 +15,10 @@
   ],
   "content_scripts": [
     {
-       "exclude_globs": [  ],
-      "exclude_matches": [  ],
       "include_globs": [ "https://pardot.desk.com/*" ],
-      "js": [ "src/inject/inject.js" ],
       "matches": [ "http://*/*", "https://*/*" ],
       "run_at": "document_idle",
+      "js": [ "src/inject/inject.js" ],
       "css": [
         "src/inject/inject.css"
       ]
