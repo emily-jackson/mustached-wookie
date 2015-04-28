@@ -1,0 +1,28 @@
+{
+  "name": "Add JIRA Links to Desk",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Hi, you",
+  "homepage_url": "http://bacon.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "permissions": [
+    "https://pardot.desk.com/agent*"
+  ],
+  "content_scripts": [
+    {
+       "exclude_globs": [  ],
+      "exclude_matches": [  ],
+      "include_globs": [ "https://pardot.desk.com/*" ],
+      "js": [ "src/inject/inject.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_idle",
+      "css": [
+        "src/inject/inject.css"
+      ]
+    }]
+}
