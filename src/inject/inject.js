@@ -7,9 +7,9 @@ var tempPDT = '';
 (function checkForCase() {
     // make sure a case is loaded
     if (document.querySelector('.a-case-tab')) {
-        
         //  how I'm handling Desk tabs - place all CCEs into an array
         cceArray = document.querySelectorAll('#ticket_custom21');
+        cce = cceArray[cceArray.length -1].value;
     
         // don't add a link to the page if we're still on the same page
         if (cce !== tempCCE) {
@@ -20,6 +20,7 @@ var tempPDT = '';
         
         //  how I'm handling Desk tabs - place all PDTs into an array
         pdtArray = document.querySelectorAll('#ticket_custom3');
+        pdt = pdtArray[pdtArray.length - 1].value;
         
         // don't add a link to the page if we're still on the same page
         if (pdt !== tempPDT) {
