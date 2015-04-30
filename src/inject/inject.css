@@ -1,3 +1,16 @@
-/**
- * Nothing here yet
- **/
+.jiraLink {
+    clear: both;
+    cursor: hover;
+    font-weight: 400;
+}
+
+.jiraLink img {
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.jiraLink a {
+    display: inline !important;
+    margin: 0 !important;
+    vertical-align: middle;
+}

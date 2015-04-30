@@ -1,8 +1,8 @@
 {
-  "name": "Add JIRA Links to Desk",
+  "name": "Add inline JIRA Links to Desk",
   "version": "0.1",
   "manifest_version": 2,
-  "description": "Creates a link to PDT/CCE issues next to those fields in Desk",
+  "description": "Creates an inline link to PDT/CCE next to those fields in Desk",
   "homepage_url": "http://sanger.dk/",
   "icons": {
     "16": "icons/icon16.png",
