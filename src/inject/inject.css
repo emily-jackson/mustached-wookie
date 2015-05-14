@@ -14,3 +14,18 @@
     margin: 0 !important;
     vertical-align: middle;
 }
+
+/* my open cases */
+#tab-ticket-filter-1824027 {
+background-color: #D86363 !important;
+}
+
+/* t1 unassigned tab color */
+#tab-ticket-filter-2183974 {
+background-color: #7EBAE5 !important;
+}
+
+/* t2 unassigned */
+#tab-ticket-filter-2123581 {
+background-color: #6D57BE !important;
+}

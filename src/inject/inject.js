@@ -1,4 +1,4 @@
-var badLinkCheck = /^(http)/ig;
+//var badLinkCheck = /^(http)/ig;
 var cce = '';
 var cceArray = [];
 var tempCCE = '';
@@ -14,7 +14,7 @@ var tempPDT = '';
         cce = cceArray[cceArray.length -1].value;
     
         // don't add a link to the page once it's been added
-        if (cce !== tempCCE && !(badLinkCheck.test(cce))) {
+        if (cce !== tempCCE) {
             cceArray[cceArray.length - 1].parentElement.insertAdjacentHTML('afterend', "<div class='jiraLink'><img src='https://i.imgur.com/cXxqLDL.png'><a href='https://jira.dev.pardot.com/browse/" + cce + "' target='_blank'>" + cce + "</a><div>");
             // cache the cce of the current page
             tempCCE = cce;
@@ -25,7 +25,7 @@ var tempPDT = '';
         pdt = pdtArray[pdtArray.length - 1].value;
         
         // don't add a link to the page once it's been added
-        if (pdt !== tempPDT && !(badLinkCheck.test(pdt))) {
+        if (pdt !== tempPDT) {
             pdtArray[pdtArray.length - 1].parentElement.insertAdjacentHTML('afterend', "<div class='jiraLink'><img src='https://i.imgur.com/cXxqLDL.png'><a href='https://jira.dev.pardot.com/browse/" + pdt + "' target='_blank'>" + pdt + "</a></div>");
             // cache the pdt of the current page
             tempPDT = pdt;
